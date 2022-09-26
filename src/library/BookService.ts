@@ -1,5 +1,7 @@
 import BookRepository from "./BookRepository";
+import { autoInjectable } from "tsyringe";
 
+@autoInjectable()
 export default class BookService {
   bookRepository: BookRepository;
 
